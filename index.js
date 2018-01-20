@@ -10,8 +10,6 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
-
-
 var countdownTime = JSON.parse(fs.readFileSync('timeData/countdownTime.json'), 'utf8');
 
 var setcountdown = "403207108390289418"
