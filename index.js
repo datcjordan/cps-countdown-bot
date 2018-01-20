@@ -57,7 +57,7 @@ function updateTimeOnStatus() {
 	console.log('We are updating the time');
 	console.log(`${days} ${hours} ${minutes}`);
 
-	if (parseInt(days) > 1) {
+	if (parseInt(days) >= 1) {
 		console.log('days bigger than 1');
 		client.user.setActivity(`Pump in ${duration.days} days ${hours}:${minutes}`);
 	} else if (parseInt(duration.minutes) > 0) {
@@ -212,7 +212,7 @@ app.listen(port, () => {
 });
 
 setInterval(() => {
-  http.get('http://cps-main-bot.herokuapp.com');
+  http.get('http://cps-countdown-bot.herokuapp.com');
 }, 900000);
 
 
