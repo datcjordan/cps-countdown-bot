@@ -1,0 +1,22 @@
+{
+  "name": "countdown-bot",
+  "version": "1.0.0",
+  "description": "My own Discord bot",
+  "main": "bot.js",
+  "engines": {
+      "node": "8.6.0",
+      "npm": "5.6.0"
+  },
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
+  },
+  "author": "jordan",
+  "dependencies": {
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "discord.js": "^11.3.0",
+    "moment": "^2.20.1",
+    "nodemon": "^1.14.11",
+    "winston": "^2.4.0"
+  }
+}
